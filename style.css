@@ -1,0 +1,37 @@
+@media all and (max-width:700px)
+{body img.imgs{max-width:100%;
+              width:100px;
+              height:100px;}
+
+}
+@media all and (max-width:3000px)
+{body{background-color:#E9E0DB; margin:0; padding:0; width:100%; font-family:Georgia,"Times New Roman",serif; font-size:10.5pt;}
+ table{margin:auto;}
+ td,img{border-radius: 5px;}
+ .links:hover{opacity:0.5;
+        filter: alpha(opacity=50); text-align:left;}
+ th{text-align:center; font-size:12pt;}
+ header h1{float:left; margin-left:30px; font-size: 38pt;}
+ header img{float:left; margin-left:10px;}
+ h3{font-size:17pt;}
+ hr{margin-top:25px; margin-bottom:35px; margin-left:55px; margin-right:55px;}
+  
+ a{text-decoration:none; color:#330000;}
+ a:hover{color:#CDB99C; }
+ #imgPar{float:left; padding-right:10px;}
+ #mainBox{position:relative;}
+ #headBox{background-color:#3399CC; width:100%;
+         height:120px;}
+ #menuRow{background-color:#FFFFFF; padding:5px;}
+ #infoLinks{ background-color:#FFFFFF;width:80%; margin:auto; padding:0; border:2px brown solid; border-radius: 15px; }
+ #box1{position:absolute; }
+ #contentBox{background-color:#CDB99C; 
+             width:80%; margin:auto; padding:5px; border-left:2px brown solid; border-right:2px brown solid }
+ #contentSubBox{background-color:#CDB99C; 
+             width:80%; margin:auto; padding:5px; border-left:2px brown solid; border-right:2px brown solid  }
+ #linkTable td{padding:3px; }
+ #linkTable th{text-align:left;padding-right:10px; }
+ #linkLine{padding:20px 0px 20px 0px; }
+ #footBox{height:100px;
+          background-color:#330000; color:#FFFFFF; font-size:8pt; text-align:center;padding:20px;}	
+}
