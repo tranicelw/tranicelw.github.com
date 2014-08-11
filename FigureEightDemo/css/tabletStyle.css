@@ -1,0 +1,94 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 19, 2014, 10:45:52 PM
+    Author     : Tranice
+*/
+
+/*Tablet: Landscape  and Netbook Layout*/
+@media all and (max-width: 1024px)
+{
+    body
+    img.figureLogo
+    {max-width: 100%;
+     width: 300px;
+     height: available;
+    }
+    body
+    #menuBar
+    {position: relative;
+    top: -43px;
+    left: 370px;
+    }
+    body
+    .smallImg
+     {height: 500px;
+      width:750px;         
+     } 
+    body
+    #slider
+    {max-width: 980px;
+     min-width: 750px;
+     overflow: hidden;  
+     height: 500px;
+     width: auto;
+    }    
+    body
+    #homeBox
+    {position: relative;
+     margin-left: auto;
+     margin-right: auto;        
+     background-color: #0C107A;
+     width: 75%;
+     padding-left: 70px; 
+     padding-right: 70px;
+     padding-top: 100px;
+     padding-bottom: 30px;
+    }
+}
+
+/*Tablet: Portrait */
+@media all and (max-width: 768px)
+{
+    body
+    img.figureLogo
+    {max-width: 100%;
+     width: 500px;
+     height: available;
+    }
+    body
+    #menuBar
+    {position: relative;
+    top: -43px;
+    left: 630px;
+    visibility: hidden;
+    }   
+     body
+     .smallImg
+     {height: 500px;
+      width:551px;         
+     }
+    body
+    #slider
+    {max-width: 980px;
+     min-width: 500px;
+     overflow: hidden;  
+     height: 500px;
+     width: auto;
+    }    
+    body
+    #homeBox
+    {position: relative;
+     margin-left: auto;
+     margin-right: auto;        
+     background-color: #0C107A;
+     width: 75%;
+     padding-left: 50px; 
+     padding-right: 50px;
+     padding-top: 100px;
+     padding-bottom: 30px;
+    }
+}

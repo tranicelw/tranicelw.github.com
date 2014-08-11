@@ -1,0 +1,321 @@
+/*
+  This is the stylesheet for the Figure8 Demo Site. This will show the standard appearance of every page. 
+*/
+/* 
+    Created on : May 6, 2014, 8:14:32 PM
+    Author     : Tranice
+*/
+/*Widescreen Layout*/
+@media all and (max-width: 2000px)
+{
+    body
+    {background-color: #050513;}
+    p
+    {color: white;}
+    #menuBar
+    {position: relative;
+    top: -43px;
+    left: 630px;
+    }
+    .menu
+    {display: block;
+     margin-left: 5px;
+     margin-right: 15px;
+    }
+    ul
+    {list-style: none;
+     font-size: 18px;
+     font-weight: bold;
+    }
+    li
+    {display: inline-table;}
+    
+    a:link
+    {text-decoration: none;
+      color: #050513;       
+    }
+    a:visited
+    {color: #050513;}
+    a:hover
+    {color: yellow;}
+    a:active
+    {color: #020202;}
+    #top
+    {background-color: #2F2FB5;
+     position: fixed;
+     top: 0px;
+     left: 0px;
+     height: 100px;
+     width: 100%;
+     z-index: 1;     
+    }    
+    #slider figure
+    {position: relative;
+     width: 300%;
+     margin: 0;
+     padding: 0;
+     font-size: 0;
+     }     
+    figure#imagestrip img
+    {width: 33.3%;
+     height: auto;
+    }    
+    #slider
+    {width: auto;
+     max-width: 980px;
+     min-width: 980px;
+     overflow: hidden;  
+     height: auto;
+    }    
+    @keyframes slidy
+    {0% { left: 0%; }
+
+    20% { left: 0%; }
+
+    25% { left: -100%; }
+
+    45% { left: -100%; }
+
+    50% { left: -100%; }
+
+    70% { left: -100%; } 
+
+    75% { left: -200%; }
+
+    95% { left: -200%; }
+
+    100% { left: -200%; } 
+    }
+    @-webkit-keyframes slidy 
+    {0% { left: 0%; }
+
+    20% { left: 0%; }
+
+    25% { left: -100%; }
+
+    45% { left: -100%; }
+
+    50% { left: -100%; }
+
+    70% { left: -100%; } 
+
+    75% { left: -200%; }
+
+    95% { left: -200%; }
+
+    100% { left: -200%; } 
+    }
+    #slider figure
+    {position: relative;
+     width:300%;
+     margin: 0;
+     padding: 0;
+     font-size: 0;
+     left: 0;
+     animation: 30s slidy infinite;  
+     -webkit-animation: 30s slidy infinite;
+    }
+    #homeBox
+    {position: relative;
+     margin-left: auto;
+     margin-right: auto;        
+     background-color: #0C107A;
+     width: 75%;
+     padding-left: 50px; 
+     padding-right: 50px;
+     padding-top: 100px;
+     padding-bottom: 30px;
+    }
+    #innerBox
+    {width:100%;}    
+    #bottom
+    {width:100%;
+     background-color: #2F2FB5;
+     height: 50px;
+     position: relative;
+     bottom: -10px;
+     left:-8px;
+     padding-right: 16px; 
+     padding-top: 10px;
+     padding-bottom: 84px;
+     text-align: center;
+    }
+    .contactInfo
+    {text-align: center;}    
+    .bookingInfo
+    {display: list-item;
+     color: white;
+     background-color:#0C107A;
+     font-size: 16px;
+     font-weight: normal;}
+    h3
+    {color:yellow;}
+    h4
+    {color:yellow;}
+    table
+    {color: white;      
+    }
+    th
+    {color: yellow;        
+    }
+}
+/*Desktop Layout*/
+@media all and (max-width: 1280px)
+{
+    body
+    img.figureLogo
+    {max-width: 100%;
+     width: 500px;
+     height: available;
+    }
+     #menuBar
+    {position: relative;
+    top: -43px;
+    left: 590px;
+    }
+    body
+    .smallImg
+     {height: 500px;
+      width:935px;         
+     }  
+    body
+    #slider
+    {max-width: 980px;
+     min-width: 900px;
+     overflow: hidden;  
+     height: 500px;
+     width: auto;
+    }   
+    body
+    #homeBox
+    {position: relative;
+     margin-left: auto;
+     margin-right: auto;        
+     background-color: #0C107A;
+     width: 75%;
+     padding-left: 80px; 
+     padding-right: 80px;
+     padding-top: 100px;
+     padding-bottom: 30px;
+    }
+}
+/*Widescreen: Half-screen */
+@media screen and (max-width: 674px)
+{
+    body
+    {overflow: scroll;
+     width: 735px;  
+    }
+    body
+    img.figureLogo
+    {max-width: 100%;
+     width: 450px;
+     height: available;
+    }
+    body
+    #menuBar
+    {position: relative;
+    top: -43px;
+    left: 555px;
+    visibility: hidden;
+    }
+     body
+     .smallerImg
+     {height: 500px;
+      width:400px;         
+     }
+    body
+    #slider
+    {max-width: 480px;
+     min-width: 430px;
+     overflow: hidden;  
+     height: 500px;
+     width: auto;
+    }    
+}
+
+/*Desktop: Half-Screen*/
+@media screen and (max-width: 640px)
+{
+    body
+    {overflow: scroll;
+     width: 735px;  
+    }    
+    body
+    img.figureLogo
+    {max-width: 100%;
+     width: 450px;
+     height: available;
+    }
+    body
+    .smallImg
+     {height: 500px;
+      width:45px;         
+     }  
+    body
+    #slider
+    {max-width: 480px;
+     min-width: 400px;
+     overflow: hidden;  
+     height: 500px;
+     width: auto;
+    }    
+}
+/*Netbook: Half-Screen */
+@media screen and (max-width: 512px)
+{
+     body
+    {overflow: scroll;
+     width: fit-content;  
+     display: block;
+    }  
+    body
+    img.figureLogo
+    {max-width: 100%;
+     width: 100px;
+     height: available;   
+     position: absolute;
+     top: 0px;
+     left: 110px;
+    }
+     body
+     #top
+    {background-color: #2F2FB5;
+     position: fixed;
+     top: 0px;
+     left: 0px;
+     height: 100px;
+     width: 78%;
+     z-index: 1;     
+    }    
+    #menuBar
+    {position: relative;
+    top: -43px;
+    left: 630px;
+    visibility: hidden;
+    }   
+     body
+     .smallImg
+     {height: 500px;
+      width:359px;         
+     }
+    body
+    #slider
+    {max-width: 380px;
+     min-width: 300px;
+     overflow: hidden;  
+     height: 500px;
+     width: auto;
+    }    
+    #homeBox
+    {position: relative;
+     margin-left: auto;
+     margin-right: auto;        
+     background-color: #0C107A;
+     width: 75%;
+     padding-left: 50px; 
+     padding-right: 50px;
+     padding-top: 100px;
+     padding-bottom: 30px;
+    }
+}

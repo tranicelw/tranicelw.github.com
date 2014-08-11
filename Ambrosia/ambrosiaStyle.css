@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1{
+	font-weight: bold;
+	color: #993333;
+	text-align: center;
+}
+body{
+	background-color: #E63258;
+	background-image:url(./ID-100231660.jpg);
+}
+
+a{text-decoration:none;
+  color: #541420;}
+
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #541420;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+
+h2,h3, h4,p{color:#561221;
+     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;}
+
+#sideMenu{
+	float: left;
+	width: auto;
+	padding: 15px;
+}
+
+#bannerImage{
+	position: relative;
+	right: 50px;
+	top: -8px;
+	width: 100%;
+	left: 25px;
+	z-index: 1;
+	border-radius: 125px;
+	border: thick ridge #E63258;
+}
+
+#picCredit{
+	position: relative;
+	top: 20px;
+	float: left;
+	width: 1566px;
+	font-size:11px;
+}
+#flavors{
+	padding-left: 35px;
+	height: 2500px;
+	text-align: left;
+	text-indent: 15px;
+	white-space: normal;
+	width: auto;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color: #561221;
+	
+}
+#section{
+	width: 900px;
+	background-color: #F8CCD5;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 15px;
+	position: relative;
+	top: -1px;
+	border-radius: 125px;
+	height: auto;
+}
+#section1{
+	width: 900px;
+	background-color: #F8CCD5;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 15px;
+	position: relative;
+	top: -1px;
+	border-radius: 125px;
+	height: 1600px;
+}
+#section2{width: 900px;
+	background-color: #F8CCD5;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 15px;
+	position: relative;
+	top: -1px;
+	border-radius: 125px;
+	height: 600px;
+}
+#section3{
+	position: relative;
+	padding-top: 120px;
+}
+#section4{height: 530px; }
+#productTypes{
+	position: relative;
+	top: 125px;
+}
+
+#productImage{
+	border-radius: 100px;
+	border: medium double #AC2542;
+}
+#sideMenu table tr th a {
+	font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+}
+
+}

@@ -1,0 +1,73 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 19, 2014, 8:43:05 PM
+    Author     : Tranice
+*/
+/*Smartphone: Landscape */
+@media screen and (max-width: 480px)
+{
+    body
+    {
+     width: 447px;   
+    }
+    body
+    img.figureLogo
+    {max-width: 100%;
+     width: 330px;
+     height: available;
+    }
+    body
+    #top
+    {background-color: #2F2FB5;
+     position: fixed;
+     top: 0px;
+     left: 0px;
+     height: 100px;
+     width: 100%;
+     z-index: 1;     
+    }    
+     body
+     .smallImg
+     {height: 200px;
+      width:335px;         
+     }  
+    body
+    #slider
+    {max-width: 980px;
+     min-width: 220px;
+     overflow: hidden;  
+     height: 200px;
+     width: auto;
+    }    
+}
+/*Smartphone: Portrait */
+@media screen and (max-width: 350px)
+{
+    body
+    {
+     width: 295px;        
+    }
+    body
+    img.figureLogo
+    {max-width: 100%;
+     width: 195px;
+     height: available;
+    }  
+    body
+    .smallImg
+     {height: 200px;
+      width:221px;         
+     }  
+   body
+   #slider
+    {max-width: 980px;
+     min-width: 200px;
+     overflow: hidden;  
+     height: 200px;
+     width: auto;
+    }    
+}
