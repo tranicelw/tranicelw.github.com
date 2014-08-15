@@ -22,7 +22,7 @@ AddType application/x-httpd-php .html
         <link rel="stylesheet" type="text/css" media="screen and (max-width:350px)" href="./css/phoneStyle.css">
         <link rel="stylesheet" type="text/css" media="screen and (max-width:480px)" href="./css/phoneStyle.css">
     </head>
-    <body onLoad="HTMLTable">
+    <body onLoad="list()">
      <div id="top">
             <header><img src="./images/figure8Logo.jpg" alt="Figure8 Logo" width="100" height="100">
                 <img class="figureLogo" src="./images/figure8Title.jpg" alt="Figure8 Title" width="500" height="100">
@@ -54,52 +54,7 @@ AddType application/x-httpd-php .html
 
            }
           </script> 
-                <table id= "songRecord3" border="2">
-                    <tr><th>Artist</th><th>Song</th></tr>
-                <!--<tr><td><span id='jArtist'></span></td><td><span id='jSong'></span></td></tr>-->   
-      
-                <?php 
-                    $host= "localhost";
-                    $username="root";
-                    $password="";
-                    $database="figureeight";
-                    $table="songlist";
-                    
-                    $con= mysqli_connect($host, $username, $password, $database);   
-                    $con -> query("SET NAMES 'utf8'");
-
-                    //if they cannot connect then it spits out error code and takes them back to Entrance Page
-                    if(mysqli_connect_errno())
-                    {
-                      echo "Failed to connect to the database: " . mysqli_connect_error();
-                      die();
-                    }
-                    $sql="SELECT * FROM $table";
-                    $results= mysqli_query($con, $sql);
-                    if($results -> num_rows > 0)
-                    {
-                     while($row=$results ->fetch_assoc())
-                        {            
-                            echo "<tr>";
-                            echo "<td>" . $row['artistName'] . "</td>";
-                            echo "<td>" . $row['songTitle'] . "</td>";
-                            //this link will take the user to the sources associated w/ the quotes. 
-                            echo "</tr>";
-                            
-                         }
-                    }
-                     mysqli_close($con);
-                    ?> 
-                </table>     
-                <!--for(i=0; i < JObject.length; i++)
-                  {
-                     text += JObject[i] + "<br>"; 
-                  }//works but need to find way to have ALL songs displayed on list
-                   document.getElementById("jArtist").innerHTML= JObject[1].artistName;
-                   document.getElementById("jSong").innerHTML= JObject[1].songTitle;
-                 */ // alert(JSON.stringify(JObject));-->
-               
-                </div>                             
+                               </div>                             
         </div>
                 
        <div id="bottom">
