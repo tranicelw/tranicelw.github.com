@@ -39,8 +39,22 @@ AddType application/x-httpd-php .html
         </div>
         <div id='homeBox'>
             <div id='innerBox'>
-               
-                <table id= "songRecord" border="2">
+                <p id="songRecord"> </p>
+                <script>    
+			function list()
+          { var i;
+            var olist = "<ol>";
+            var figurelist = ['5th Dimension','Abba', 'Ace','Al Green', 'Al Wilson','Alan O''Day', 'Albert Hammond', 'Alice Cooper', 'Alicia Bridges', 'Allman Brothers Band','Amazulu', 'America','Amii Stewart','Andrea True Connection', 'Andy Gibb', 'Andy Kim', 'Anita Ward', 'Aretha Franklin'];
+            for (i = 0; i < figurelist.length; i++;)
+            {
+        		olist += "<li>" + figurelist[i] + "</li>";
+            }
+             olist += "</ol>";
+             document.getElementById("songRecord").innerHTML = olist;
+
+           }
+          </script> 
+                <table id= "songRecord3" border="2">
                     <tr><th>Artist</th><th>Song</th></tr>
                 <!--<tr><td><span id='jArtist'></span></td><td><span id='jSong'></span></td></tr>-->   
       
