@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
    <head>
         <title>Figure8 Demo Site</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <Files songList.html>
-AddType application/x-httpd-php .html
-</Files>
         <link rel="stylesheet" type="text/css" media="all and (max-width:2000px)" href="./css/style.css">
         <link rel="stylesheet" type="text/css" media="all and (max-width:1280px)" href="./css/style.css">
         <link rel="stylesheet" type="text/css" media="screen and (max-width:512px)" href="./css/style.css">
@@ -20,9 +11,9 @@ AddType application/x-httpd-php .html
         <link rel="stylesheet" type="text/css" media="all and (max-width:1024px)" href="./css/tabletStyle.css">
         <link rel="stylesheet" type="text/css" media="all and (max-width:768px)" href="./css/tabletStyle.css">
         <link rel="stylesheet" type="text/css" media="screen and (max-width:350px)" href="./css/phoneStyle.css">
-        <link rel="stylesheet" type="text/css" media="screen and (max-width:480px)" href="./css/phoneStyle.css">
-    </head>
-    <body onLoad="list()">
+         <link rel="stylesheet" type="text/css" media="screen and (max-width:480px)" href="./css/phoneStyle.css">
+	</head>
+    <body onload="myFunction()">
      <div id="top">
             <header><img src="./images/figure8Logo.jpg" alt="Figure8 Logo" width="100" height="100">
                 <img class="figureLogo" src="./images/figure8Title.jpg" alt="Figure8 Title" width="500" height="100">
@@ -38,23 +29,24 @@ AddType application/x-httpd-php .html
         </div></header>   
         </div>
         <div id='homeBox'>
-            <div id='innerBox'>
-                <p id="songRecord"> </p>
-                <script>    
-			function list()
-          { var i;
-            var olist = "<ol>";
-            var figurelist = ['5th Dimension','Abba', 'Ace','Al Green', 'Al Wilson','Alan O''Day', 'Albert Hammond', 'Alice Cooper', 'Alicia Bridges', 'Allman Brothers Band','Amazulu', 'America','Amii Stewart','Andrea True Connection', 'Andy Gibb', 'Andy Kim', 'Anita Ward', 'Aretha Franklin'];
-            for (i = 0; i < figurelist.length; i++;)
-            {
-        		olist += "<li>" + figurelist[i] + "</li>";
-            }
-             olist += "</ol>";
-             document.getElementById("songRecord").innerHTML = olist;
-
-           }
-          </script> 
-                               </div>                             
+            <div id='innerBox'>			
+			  <div id="songRecord"> </div>
+             <script>    
+			function myFunction() {
+              var index;
+              var text = "<table><th>Artist</th><th>Songs</th>";
+              var figurelist = ["Abba", "5th Dimension", "Ace", "Al Green", "Al Wilson","Albert Hammond", "Alice Cooper", "Alicia Bridges", "Allman Brothers Band","Amazulu", "America","Amii Stewart"];
+	          var songs = ["a", "b", "c", "d", "e", "h", "i", "j", "k", "l", "m", "n"];
+              for (index = 0; index < figurelist.length; index++) {
+	              for(index = 0; index < songs.length; index++)
+	              {
+                    text += "<tr><td>" + figurelist[index] + "</td><td>" + songs[index] +"</td></tr>";
+                  }
+	            }
+                     text += "</table>";
+                     document.getElementById("songRecord").innerHTML = text;
+            }</script>               
+                </div>                             
         </div>
                 
        <div id="bottom">
@@ -68,6 +60,6 @@ AddType application/x-httpd-php .html
                 <li><a href="./contactUs.html">Contact Us</a></li>                
             </ul>
         </footer>
-        </div>
+        </div>                
     </body>
 </html>
