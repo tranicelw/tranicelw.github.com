@@ -1,0 +1,28 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+*{
+    //border: 1px solid red !important; 
+}
+.row{background-color: white;}
+  
+.carousel-indicators .active 
+{
+    background-color: #40E0D0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
