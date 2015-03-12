@@ -3,7 +3,6 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
 *{
     //border: 1px solid red !important; 
 }
@@ -13,8 +12,39 @@
 {
     background-color: #40E0D0;
 }
+.carousel-control
+{
+    width:7%;
+}
+@media (max-device-width: 480px) and (orientation: landscape){
+#col-xs{width:40%; margin-left: auto; margin-right: auto;           
+    
+}}
+@media (max-device-width: 320px) and (orientation: portrait){
+#col-xs{width:50%; margin-left: auto; margin-right: auto;           
+    
+}}
 
-
+@media (max-device-width: 640px){
+#col-xs{width:40%; margin-left: auto; margin-right: auto;           
+    
+}}
+@media (max-device-width: 360px) {
+#col-xs{width:50%; margin-left: auto; margin-right: auto;           
+    
+}}
+@media (max-width: 1024px) {
+#col-xs{width:100%; margin-left: auto; margin-right: auto;           
+    
+}}
+@media (max-width: 768px){
+#col-xs{width:50%; margin-left: auto; margin-right: auto; height: 150px;           
+    
+}}
+@media (max-device-width: 800px){
+#col-xs{width:40%; margin-left: auto; margin-right: auto; height: 150px;       
+    
+}}
 
 
 
